@@ -19,16 +19,20 @@ class Footer extends Component {
             <div class="container">
                 <div class="level">
                     <div class="level-start">
-                        <a class="footer-logo is-block mb-2" href={siteUrl}>
-                            {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
+                        <a class="navbar-item navbar-logo" href={siteUrl}>
+                            <span>TechnoSmith Labs.</span>
                         </a>
                         <p class="size-small">
                             <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
+                            &nbsp;|&nbsp;All Rights Reserved
+                        </p>
+                        <p class="size-small">
+                            <span>Built on <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
                             <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                            {showVisitorCounter ? <br /> : null}
-                            {showVisitorCounter ? <span id="busuanzi_container_site_uv"
-                                dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
+                                {showVisitorCounter ? <br /> : null}
+                                {showVisitorCounter ? <span id="busuanzi_container_site_uv"
+                                    dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
+                            </span>
                         </p>
                     </div>
                     <div class="level-end">

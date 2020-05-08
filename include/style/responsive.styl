@@ -1,11 +1,27 @@
 /* ---------------------------------
  *         Responsive Layout
  * --------------------------------- */
-+widescreen()
-    .is-1-column .container, .is-2-column .container
-        max-width: $desktop - 2 * $gap
-        width: $desktop - 2 * $gap
+.container {
+    max-width: 1132px;
+}
++desktop()
+    .column.is-8-widescreen
+        width: 73.66667%
+    .column.is-4-desktop
+        width: 25.33333%
 
++widescreen()
+    .is-1-column .container
+        max-width: 1200px
+        width: 1200px
+    .is-2-column .container
+        max-width: 1200px
+        width: 1200px
+    .column.is-4-widescreen
+        width: 25.33333% !important
+    .column.is-8-widescreen
+        width: 74.66667% !important
+        
 +fullhd()
     .is-2-column .container
         max-width: $widescreen - 2 * $gap
@@ -22,11 +38,22 @@
         top: 1.5rem
         z-index: 99
 
+    .column.is-4-tablet
+        width: 25.33333%
+    
+    .column.is-8-tablet
+        width: 74.66667%
+
     .column-main, .column-left, .column-right, .column-right-shadow
         &.is-sticky
             top: .75rem
             align-self: flex-start
 
+    .section
+        padding: 1.5rem 1rem
+        padding-top: 90px !important;
+
 +mobile()
     .section
         padding: 1.5rem 1rem
+        padding-top: 100px !important;

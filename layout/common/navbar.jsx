@@ -32,7 +32,7 @@ class Navbar extends Component {
             <div class="container">
                 <div class="navbar-brand justify-content-center">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
-                        {logo && logo.text ? logo.text : <img src={logoUrl} alt={siteTitle} height="28" />}
+                        <span style="font-family:Righteous; font-size: 26px;">TechnoSmith Labs. &nbsp;<i class="fa fa-flask" aria-hidden="true"></i></span>
                     </a>
                 </div>
                 <div class="navbar-menu">
